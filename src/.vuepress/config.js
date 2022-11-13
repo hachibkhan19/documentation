@@ -5,6 +5,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: "Knowledge Hub",
+  base: "https://inneed.cloud.gitlab.io/knowledge-hub/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
