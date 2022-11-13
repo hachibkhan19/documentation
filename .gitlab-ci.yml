@@ -1,5 +1,5 @@
 # The Docker image that will be used to build your app
-image: node:lts-alpine
+image: node:16.18.1-slim
 
 pages:
   cache:
