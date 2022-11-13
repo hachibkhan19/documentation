@@ -9,7 +9,7 @@ pages:
     # Specify the steps involved to build your app here
     - npm install
     - npm run build
-    - cp -r src/.vuepress/dist/ public/
+    - cp -r src/.vuepress/dist/* public/
 
   artifacts:
     paths:
