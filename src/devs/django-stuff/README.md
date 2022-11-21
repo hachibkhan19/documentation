@@ -14,7 +14,7 @@ Model:
 
 A model is a class that represents table or collection in our Database, and where every attribute of the class is a field of the table or collection. Example:-
 
-```
+```python
 from django.db import models
     classInNeedInfo(models.Model):
         website = models.CharField(max_length =50)
@@ -46,7 +46,7 @@ Function based views are writing using a python function which receives HttpRequ
 
 Example:-
 
-```
+```python
 fromdjango.shortcuts importrender, HttpResponse
 
 from.models importInNeed
@@ -83,7 +83,7 @@ REST stands for REpresentational State Transfer. It interacts with data stored o
 
 Serializers in Django REST Framework are responsible for converting objects into data types understandable by JavaScript and front-end frameworks. Serializers also provide de-serialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
 
-```
+```python
 classComment:
     def __init__ (self,email,content):
         self.email=emailself.content=content
@@ -98,7 +98,7 @@ ModelSerializer builds the serializer based on the model. It will automatically 
 
 Example:-
 
-```
+```python
 classInNeedInfoSerializer(serializers.ModelSerializer):
     classMeta:
         model =InNeedInfo
@@ -109,7 +109,7 @@ HyperlinkedModelSerializer:
 
 The HyperlinkedModelSerializer class is similar to the ModelSerializer class except that it uses hyperlinks to represent relationships, rather than primary keys. By default the serializer will include a url field instead of a primary key field.
 
-```
+```python
 classInNeedSerializer(serializers.HyperLinkedModelSerialier):
     classMeta:
         model =InNeedInfo
@@ -120,7 +120,7 @@ classInNeedSerializer(serializers.HyperLinkedModelSerialier):
 
 Here is the way to create and update multiple records at once in django rest framework using ListSerializer. This way is very sort and and give fast response.
 
-```
+```python
 classPerson(models.Model):
     name = models.CharField(max_length =50)
     address=models.CharField(max_length=50)
@@ -134,7 +134,7 @@ When building your API in Django using Django Rest Framework, you have two choic
 
 APIView provides a methods handler for HTTP verbs: get, post, put, patch and delete. But you'll need to write a method for each HTTP verb. Example:-
 
-```
+```python
 classInNeedView(APIView):
     def get(self, request):
         inneed=InNeed.objects.all()
@@ -146,7 +146,7 @@ serializer= InNeedSerializer(inneed, many=True)return Response(serializer.data)
 
 A ViewSet is a class-based view, able to handle all of the basic HTTP requests: GET, POST, PUT, DELETE without hard coding any of the logic.
 
-```
+```python
 classInNeedViewSet(serializers.ModelViewSet):
     queryset = InNeed.objects.all()
     serializer_class = InNeedSerializer

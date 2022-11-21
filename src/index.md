@@ -5,11 +5,14 @@ tagline:
 actionText: Projects →
 actionLink: /projects/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by  with ❤️
+- title: Dev Docs
+  details: Development Documents
+  link: /devs/
+- title: Must Know
+  details: Must Know Docs
+  link: /must-know/
+- title: Guide
+  details: Knowledge Hub Guide
+  link: /guide/
+footer: Made by InNeed with ❤️ and Care
 ---

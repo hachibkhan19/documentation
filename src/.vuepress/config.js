@@ -38,6 +38,14 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
+        text: "Docs 🗎",
+        link: "/devs/",
+      },
+      {
+        text: "Must Know",
+        link: "/must-know/",
+      },
+      {
         text: "Guide",
         link: "/guide/",
       },
@@ -60,5 +68,5 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom", ['vuepress-plugin-code-copy', true]],
 };
