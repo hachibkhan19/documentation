@@ -62,6 +62,9 @@ Voilla, You now have ubuntu server on your memory card. Insert the card on your 
 ---
 
 This document is written by: **Shaman Sharif**
+
 Edited by: **Shaman Sharif**
+
 Creation Date: **22-Nov-2022**
+
 Last Edit Date: **22-Nov-2022**
