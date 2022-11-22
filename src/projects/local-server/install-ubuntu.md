@@ -34,11 +34,20 @@ As Raspberry Pi uses the ARM64 architecture. We need to download the ARM64 versi
 Raspberry Pi imager simpler way to image your microSD card with Raspbian, the official Raspberry Pi operating system, and other operating systems.
 ![Raspberry Pi Imager](https://www.raspberrypi.com/app/uploads/2020/03/RPI_intro-e1583228263677.png)
 
-To install Raspberry Pi Imager. Open terminal in your GNU/Linux machine and type those following command (Ubuntu/Debian system).
+To install Raspberry Pi Imager. Open terminal in your GNU/Linux machine and type those following command. 
+
+On Ubuntu/Debian system
 
 ```bash
 sudo apt install rpi-imager
 ```
+
+On Fedora/OpenSUSE system
+
+```bash
+sudo dnf install rpi-imager
+```
+
 This command will download and install Raspberry Pi to your machine.
 
 
