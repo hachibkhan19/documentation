@@ -231,3 +231,8 @@ Anyone with access to this document can view the API endpoints and all other rel
 
 ### Model 
 ![Model](./images/16.png)
+
+## Docker: 
+Docker is a container management service. The keywords of Docker are develop, ship and run anywhere. The whole idea of Docker is for developers to easily develop applications, ship them into containers which can then be deployed anywhere.
+### Docker-compose:
+Docker Compose is used to run multiple containers as a single service. For example, suppose you had an application which required NGNIX and MySQL, you could create one file which would start both the containers as a service without the need to start each one separately.
